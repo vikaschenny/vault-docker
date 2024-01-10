@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: vault
-        image: vikaschenny:vault-eks:latest
+        image: vikaschenny/vault-eks:latest
         ports:
         - containerPort: 8200
         volumeMounts:
