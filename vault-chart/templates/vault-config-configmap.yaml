@@ -1,0 +1,8 @@
+# templates/vault-config-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vault-config
+data:
+  vault-config.json: |
+    {{ .Values.vault.config | toYaml | nindent 4 }}

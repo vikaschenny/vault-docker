@@ -1,0 +1,14 @@
+# templates/vault-policies-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vault-policies
+data:
+  app-policy.json: |
+    {
+      "path": {
+        "kv/data/app/*": {
+          "policy": "read"
+        }
+      }
+    }
