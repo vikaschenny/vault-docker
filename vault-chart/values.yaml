@@ -3,10 +3,10 @@ vault:
   image: vikaschenny/vault-eks:latest
   replicas: 1
   config:
-    backend:
-      consul:
-        address: "consul:8500"
-        path: "vault/"
+    # backend:
+    #   # consul:
+    #   #   address: "consul:8500"
+    #   #   path: "vault/"
     listener:
       tcp:
         address: "0.0.0.0:8200"
