@@ -1,0 +1,4 @@
+apiVersion: v2
+name: vault-chart
+description: A Helm chart for deploying Vault
+version: 0.1.0

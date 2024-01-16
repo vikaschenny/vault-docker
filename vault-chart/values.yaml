@@ -13,3 +13,41 @@ vault:
         tls_disable: 1
     ui: true
   pvcSize: 10Gi
+
+vaultPolicies:
+  appPolicy: |
+    {
+      "path": {
+        "kv/data/app/*": {
+          "policy": "read"
+        }
+      }
+    }
+
+
+# vaultConfig:
+#   # backend:
+#   #   consul:
+#   #     address: "consul:8500"
+#   #     path: "vault/"
+#   listener:
+#     tcp:
+#       address: "0.0.0.0:8200"
+#       tls_disable: 1
+#   ui: true
+
+# vaultDeployment:
+#   image: vikaschenny/vault-eks:latest
+
+# vaultLogsPvc:
+#   storage: 10Gi
+
+# vaultPolicies:
+#   appPolicy: |
+#     {
+#       "path": {
+#         "kv/data/app/*": {
+#           "policy": "read"
+#         }
+#       }
+#     }
