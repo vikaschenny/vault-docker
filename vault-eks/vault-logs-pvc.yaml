@@ -7,4 +7,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 10Gi  # Adjust the storage size as needed
+      storage: 20Gi  # Adjust the storage size as needed to container 
+ 
