@@ -127,6 +127,7 @@ data:
 6. **ConfigMap for Vault Policies (`vault-policies-configmap.yaml`):**
    This YAML file defines the ConfigMap for Vault policies.
 
+# its a configmap file 
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -143,4 +144,4 @@ data:
     }
 ```
 
-Make sure to replace placeholders like `image should latest` with the actual image and tag you are using for HashiCorp Vault. After creating these YAML files, you can apply them to your EKS cluster using the `kubectl apply -f <file.yaml>` command.
+Make sure to replace placeholders like `image should latest` with the actual image and tag you are using for HashiCorp Vault. After creating these YAML files, you can apply them to your EKS cluster using the `kubectl apply -f * ` command.
